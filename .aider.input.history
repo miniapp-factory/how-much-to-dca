@@ -1,0 +1,16 @@
+
+# 2025-11-22 18:07:22.832375
++Code the following app
++```
++build a calculator app named, How Much to DCA, that takes the following user inputs, total tokens owned, total cost for all tokens, and current price of the token using textboxes. Also include a drop down selection for the user to select between the following calculation options, by target average shares, or by amount available to invest. after the dropbox include a textbox for the user to input their target average if the option "target average" was selected in the dropbox and another textbox for the user to input how much money they have available if the option "available to invest" was selected in the dropbox. Include a "CALCULATE" button that will calculate how much you need to spend and how many tokens you need to buy to reach the target average if "target average" was selected, and calculate your new average price per token if "available to invest" was selected. Place everything on the home page using a dark theme.
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-22 18:07:22.833400
++Code the following app
++```
++build a calculator app named, How Much to DCA, that takes the following user inputs, total tokens owned, total cost for all tokens, and current price of the token using textboxes. Also include a drop down selection for the user to select between the following calculation options, by target average shares, or by amount available to invest. after the dropbox include a textbox for the user to input their target average if the option "target average" was selected in the dropbox and another textbox for the user to input how much money they have available if the option "available to invest" was selected in the dropbox. Include a "CALCULATE" button that will calculate how much you need to spend and how many tokens you need to buy to reach the target average if "target average" was selected, and calculate your new average price per token if "available to invest" was selected. Place everything on the home page using a dark theme.
++```
++
++Generate an app logo and update the app metadata title and description.
