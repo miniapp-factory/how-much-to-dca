@@ -56,7 +56,7 @@ export default function Calculator() {
       const newTotalCost = C + M;
       const newAvg = newTotalCost / newTotalTokens;
       setResult(
-        `After investing $${M.toFixed(2)}, your new average price will be $${newAvg.toFixed(2)}.`
+        `After investing $${M.toFixed(2)}, you can buy ${newTokens.toFixed(4)} tokens, and your new average price will be $${newAvg.toFixed(2)}.`
       );
     }
   };
