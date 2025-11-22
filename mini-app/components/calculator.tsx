@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import { Select, SelectItem } from "@/components/ui/select";
+import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -103,8 +103,13 @@ export default function Calculator() {
             value={option}
             onValueChange={(value) => setOption(value)}
           >
-            <SelectItem value="target">Target Average Shares</SelectItem>
-            <SelectItem value="available">Amount Available to Invest</SelectItem>
+            <SelectTrigger>
+              <SelectValue placeholder="Select option" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="target">Target Average Shares</SelectItem>
+              <SelectItem value="available">Amount Available to Invest</SelectItem>
+            </SelectContent>
           </Select>
         </div>
         {option === "target" && (
