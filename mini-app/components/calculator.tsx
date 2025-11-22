@@ -100,7 +100,6 @@ export default function Calculator() {
         <div className="grid gap-2">
           <Label htmlFor="option">Calculation Option</Label>
           <Select
-            id="option"
             value={option}
             onValueChange={(value) => setOption(value)}
           >
