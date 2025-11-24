@@ -22,8 +22,8 @@ export default function Calculator() {
     try {
       const res = await fetch(`https://api.dexscreener.com/latest/dex/pairs/base/${pairAddress}`);
       const data = await res.json();
-      if (data && data.priceUsd) {
-        setCurrentPrice(data.priceUsd);
+      if (data && data.pairs && data.pairs[0] && data.pairs[0].priceUsd) {
+        setCurrentPrice(data.pairs[0].priceUsd);
       }
     } catch (err) {
       console.error(err);
