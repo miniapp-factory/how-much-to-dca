@@ -20,3 +20,9 @@
 
 # 2025-11-22 19:59:18.741759
 +when "available to invest" is selected, also calculate how many tokens can be bought with the available amount to invest and the new average price per token.
+
+# 2025-11-24 02:54:08.574983
++use dexscreener api to get price in usd using the pair address of a base chain token. use the following for the api address, https://api.dexscreener.com/latest/dex/pairs/base/${address}. Add an input box before current price of the token so that the user can enter a pair address and a button to fetch the price from the api. if the price is found put the price in usd in the current price of the token textbox.
+
+# 2025-11-24 02:54:08.575332
++use dexscreener api to get price in usd using the pair address of a base chain token. use the following for the api address, https://api.dexscreener.com/latest/dex/pairs/base/${address}. Add an input box before current price of the token so that the user can enter a pair address and a button to fetch the price from the api. if the price is found put the price in usd in the current price of the token textbox.
