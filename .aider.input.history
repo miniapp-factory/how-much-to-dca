@@ -32,3 +32,9 @@
 
 # 2025-11-24 03:12:27.186563
 +fix fetching the price for the pair address. priceUsd might be in data.pairs[0].
+
+# 2025-11-24 15:47:36.192748
++change the input box background color to green.
+
+# 2025-11-24 15:47:36.193419
++change the input box background color to green.
