@@ -11,10 +11,24 @@ export default function Calculator() {
   const [totalTokens, setTotalTokens] = useState("");
   const [totalCost, setTotalCost] = useState("");
   const [currentPrice, setCurrentPrice] = useState("");
+  const [pairAddress, setPairAddress] = useState("");
   const [option, setOption] = useState("target");
   const [targetAverage, setTargetAverage] = useState("");
   const [availableToInvest, setAvailableToInvest] = useState("");
   const [result, setResult] = useState<string | null>(null);
+
+  const fetchPrice = async () => {
+    if (!pairAddress) return;
+    try {
+      const res = await fetch(`https://api.dexscreener.com/latest/dex/pairs/base/${pairAddress}`);
+      const data = await res.json();
+      if (data && data.priceUsd) {
+        setCurrentPrice(data.priceUsd);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   const handleCalculate = () => {
     const T = parseFloat(totalTokens);
@@ -86,6 +100,21 @@ export default function Calculator() {
             onChange={(e) => setTotalCost(e.target.value)}
             placeholder="e.g., 5000"
           />
+        </div>
+        <div className="grid gap-2">
+          <Label htmlFor="pairAddress">Pair Address</Label>
+          <Input
+            id="pairAddress"
+            type="text"
+            value={pairAddress}
+            onChange={(e) => setPairAddress(e.target.value)}
+            placeholder="e.g., 0x..."
+          />
+        </div>
+        <div className="grid gap-2">
+          <Button onClick={fetchPrice} className="w-full">
+            Fetch Price
+          </Button>
         </div>
         <div className="grid gap-2">
           <Label htmlFor="currentPrice">Current Price of the Token</Label>
