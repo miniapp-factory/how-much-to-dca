@@ -26,3 +26,9 @@
 
 # 2025-11-24 02:54:08.575332
 +use dexscreener api to get price in usd using the pair address of a base chain token. use the following for the api address, https://api.dexscreener.com/latest/dex/pairs/base/${address}. Add an input box before current price of the token so that the user can enter a pair address and a button to fetch the price from the api. if the price is found put the price in usd in the current price of the token textbox.
+
+# 2025-11-24 03:12:27.185883
++fix fetching the price for the pair address. priceUsd might be in data.pairs[0].
+
+# 2025-11-24 03:12:27.186563
++fix fetching the price for the pair address. priceUsd might be in data.pairs[0].
