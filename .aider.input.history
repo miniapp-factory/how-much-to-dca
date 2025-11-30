@@ -50,3 +50,9 @@
 
 # 2025-11-24 18:15:39.571231
 +change the select trigger background to green.
+
+# 2025-11-30 22:38:46.958589
++after "Total Cost for All Tokens" add a read-only textbox that displays your current "Average Price per Token".
+
+# 2025-11-30 22:38:46.958996
++after "Total Cost for All Tokens" add a read-only textbox that displays your current "Average Price per Token".
