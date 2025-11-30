@@ -102,6 +102,16 @@ export default function Calculator() {
           />
         </div>
         <div className="grid gap-2">
+          <Label htmlFor="averagePrice">Average Price per Token</Label>
+          <Input
+            id="averagePrice"
+            type="number"
+            value={totalTokens && totalCost ? (parseFloat(totalCost)/parseFloat(totalTokens)).toFixed(4) : ""}
+            readOnly
+            placeholder="Average"
+          />
+        </div>
+        <div className="grid gap-2">
           <Label htmlFor="pairAddress">Pair Address</Label>
           <Input
             id="pairAddress"
